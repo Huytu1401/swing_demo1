@@ -1,0 +1,89 @@
+import java.io.Serializable;
+import java.util.Scanner;
+
+public class SinhVien implements Serializable{
+    private  int id;
+    private  String name;
+    private  int age;
+    private String address;
+    private  double diemTb;
+
+
+    public SinhVien() {
+    }
+
+    public SinhVien(int id, String name, int age, String address, double diemTb) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.diemTb = diemTb;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public double getDiemTb() {
+        return diemTb;
+    }
+
+    public void setDiemTb(double diemTb) {
+        this.diemTb = diemTb;
+    }
+
+    @Override
+    public String toString() {
+        return "SinhVien{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                ", diemTb=" + diemTb +
+                '}';
+    }
+
+    public  void  nhap() {  Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap id: ");
+        id = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Nhap ten");
+        name = sc.nextLine();
+        System.out.println("Nhap tuoi");
+        age = sc.nextInt();
+        sc.nextLine();
+        System.out.println("nhap dia chi");
+        address = sc.nextLine();
+        System.out.println("Nhap diem Tb:");
+        diemTb = sc.nextDouble();
+        sc.nextLine();
+    }
+}
