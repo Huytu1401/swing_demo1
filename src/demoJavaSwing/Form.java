@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Form {
     private JFrame frame1;
     private int cout;
+    private  int cout1;
 
     public Form() {
         frame1 = new JFrame("Huy Tu");
@@ -41,4 +42,6 @@ public class Form {
     public void run() {
         frame1.setVisible(true);
     }
+
+
 }
