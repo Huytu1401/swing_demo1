@@ -6,6 +6,8 @@ public class Form {
     private JFrame frame1;
     private int cout;
     private  int cout1;
+    private double hsls = 0.035;
+    private double hs1s = 0.035;
 
     public Form() {
         frame1 = new JFrame("Huy Tu");
